@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException, ElementClickInter
 import time
 import pandas as pd
 
-driver_path = 'C:/WebDriver/msedgedriver.exe'
+driver_path = 'YOUR EDGE WEBDRIVER FOLDER'
 edge_options = Options()
 edge_options.binary_location = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"  # Substitua pelo caminho correto para o seu Microsoft Edge
 
@@ -15,7 +15,7 @@ edge_options.binary_location = "C:\\Program Files (x86)\\Microsoft\\Edge\\Applic
 driver = webdriver.Edge(service=Service(driver_path), options=edge_options)
 
 # Visita a URL
-url = "https://www.google.com/search?q=oficinas+itabiura&sca_esv=600400644&biw=1879&bih=1010&tbm=lcl&sxsrf=ACQVn0-qnXxOqec8Uda2WwGwGaBfC9hDKA%3A1705942150743&ei=hpyuZZ79LOfW1sQP3IGC6AE&ved=0ahUKEwie2JvfufGDAxVnq5UCHdyAAB0Q4dUDCAk&uact=5&oq=oficinas+itabiura&gs_lp=Eg1nd3Mtd2l6LWxvY2FsIhFvZmljaW5hcyBpdGFiaXVyYTIGEAAYHhgNMggQABgIGB4YDTIKEAAYCBgeGA0YDzIIEAAYCBgeGA0yChAAGAgYHhgNGA9I2c8BUPChAVitzwFwBHgAkAEBmAGKAqAB7xWqAQYwLjE3LjK4AQPIAQD4AQGoAgrCAgQQIxgnwgIGEAAYFhgewgILEAAYgAQYsQMYgwHCAgUQABiABMICChAAGIAEGIoFGEPCAg0QABiABBiKBRhDGLEDwgIIEAAYgAQYsQPCAgcQIxjqAhgnwgIMEAAYgAQYigUYQxgKwgILEAAYgAQYigUYkgPCAggQABiABBjLAcICCBAAGBYYHhgPiAYB&sclient=gws-wiz-local#rlfi=hd:;si:;mv:[[-19.613941699999998,-43.2025201],[-19.6393545,-43.237538]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:14"
+url = "GOOGLE MAPS LINK"
 driver.get(url)
 
 # Aguarda para carregar a página
